@@ -1,16 +1,16 @@
 import "./app.css";
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { SearchIcon } from "./Components/SearchIcon";
 import { Weather } from "./Components/Weather";
-
-const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
 
 export const App = () => {
 	const [city, setCity] = useState("");
 	const [weather, setWeather] = useState("");
 
-	const weatherAPI = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+	const weatherAPI = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${
+		import.meta.env.VITE_WEATHER_API_KEY
+	}`;
 
 	const fetchWeather = (event) => {
 		event.preventDefault();
