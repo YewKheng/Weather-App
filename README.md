@@ -2,8 +2,6 @@
 # Weather App
 ![image](https://github.com/YewKheng/weather-app/assets/144677450/688b19f0-6628-46aa-8bd7-a3d773a355df)
 
-
-=======
 # React + Vite
 
 ## To Demo or fork this project for personal use:
